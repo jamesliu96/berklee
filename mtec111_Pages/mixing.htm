@@ -1,0 +1,305 @@
+<html>
+
+	<!--This file created 7/26/99 7:03 AM by Claris Home Page version 3.0-->
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Mixing</title>
+		<x-claris-window top="74" bottom="569" left="53" right="698"><x-claris-tagview mode="full">
+	</head>
+
+	<body>
+		
+<h2><font size="4" face="Verdana, Arial, Helvetica, sans-serif">Mixing</font></h2>
+<h2> 
+  <hr>
+</h2>
+<h3></h3>
+<strong><font face="Verdana, Arial, Helvetica, sans-serif">Topics This Week</font></strong> 
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#signal%20flow">Signal 
+    Flow</a></font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#mixingboard">Mixing 
+    Board Connections and Functions</a></font>
+  <li><a href="#Reasonmixer"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The 
+    Reason Mixer</font></a>
+  <li><a href="#hardwaremixers"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hardware 
+    Mixers</font></a>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#Reading">This 
+    Week's Assignment</a> </font> 
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#Review Questions">Review 
+    Questions</a> </font> 
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#Vocabulary">Vocabulary</a> 
+    </font> 
+</ul>
+		<p>
+		 
+<p class="body"><span class="body">In producing a piece of music, we use a mixer<b> 
+  </b>and effects devices to combine and process different musical parts. </span><span class="body">A 
+  mixer has a number of channels that accept audio inputs and combines them to 
+  produce a stereo output by routing and processing those signals in various ways. 
+  Each channel is usually laid out as a strip of controls that is replicated for 
+  each physical or virtual input. These controls typically include level, placement 
+  in the stereo image (panning), equalization controls, and effect routing controls.</span></p>
+<hr>
+<p><a name="signal flow"></a><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Signal 
+  Flow</b></font> </p>
+<p>The key to understanding any audio production system, whether it's a portastudio 
+  or a large professional facility, is understanding how audio signals are routed 
+  between studio components.<em><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+  <a href="studio_diagram.htm" target="_blank">Follow this link to see signal 
+  flow in a typical recording studio.</a></font></em></p>
+<p><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Audio Signal 
+  Level and Gain-staging</font></b></p>
+<p>Each component of the system either increases or reduces level. In addition, 
+  any time a signal is passed through an electronic circuit in an analog system, 
+  noise is added. Ideally, the level at each stage is optimized to provide the 
+  highest level without distortion. The ideal signal level will have the least 
+  noise. <em><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> <a href="level.html" target="_blank">Follow 
+  this link for more details on audio levels.</a></font></em></p>
+<p>In a virtual studio like Reason, we still need to be aware of audio levels 
+  at various stages. Levels in Reason are controlled at three places:</p>
+<ol>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the output of 
+    an individual instrument</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the channel 
+    fader in the mixer</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the Master Fader 
+    controlling the mix output level</font></li>
+</ol>
+<b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Level Metering 
+</font></b>provides a way for us to monitor signal level at various places in 
+the mixer. There are some important distinctions in how signal level is displayed. 
+Since the amplitude of an audio signal is always changing, level is measured and 
+displayed at discreet time intervals. 
+<ul>
+  <li>Peak level metering displays actual levels at discreet peak levels. This 
+    would detect any high transients.
+  <li>Peak level indicators are usually LEDs with give an indication when certain 
+    level thresholds have been crossed. 
+</ul>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Reason 
+  uses peak level meters to display level at:</strong></font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the channel 
+    fader</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the input of 
+    effects processors</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">the master fader</font></li>
+</ul>
+<hr>
+<font face="Verdana, Arial, Helvetica, sans-serif"><a name="mixingboard" id="mixingboard"></a><b>Mixi</b><strong>ng 
+Board Connections and Functions </strong></font> 
+<p>The mixing board is the central nervous system of a recording studio or PA 
+  system. Every audio signal passes through it, and is processed, routed, and 
+  combined with other source signals to create the final stereo mix of a multitrack 
+  production. All mixing boards, whether physical or virtual, share a similar 
+  set of components. We'll start with some basics by looking at the Reason mixer, 
+  then compare these functions to a common hardware mixer, the Mackie 1604.</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><strong><a name="Reasonmixer"></a>The 
+  Reason Mixer</strong></font> </p>
+<p class="body">The Reason mixer is laid out like many small desktop mixers, and 
+  performs three basic functions:</p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Input</strong> 
+    </font>- Every mixer has a number of input channels that are essentially the 
+    same. These accept input from separate audio sources and control their output 
+    and routing inside the mixer.</li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Auxiliary 
+    Routing</strong></font><strong> </strong>- Signals can be routed from within 
+    a channel to and from external devices. </li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Output 
+    </strong></font>- The master section is where the mixed output signals are 
+    controlled. </li>
+</ul>
+<p><em><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Follow this 
+  link for a look at the <a href="signal_path.html" target="_blank"><strong>signal path 
+  within a mixer.</strong></a></font></em></p>
+<p class="body" align="center"><font color="#FF0000"><img src="assets/Reason_mixer.gif" width="640" height="259" border="2"></font></p>
+<p class="body" align="center"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">The 
+  Reason Mixer: 14 Channels, a Master section, and four separate sends and returns.</font></p>
+<p class="body" align="left"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Within 
+  this mixer, there a six basic controls:</font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Fader</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Panning</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mute and Solo</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Equalization</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><span class="subtopic_header">Auxiliary 
+    Bus Controls</span></font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Master Fader</font></li>
+</ul>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em><strong>Follow 
+  this link to learn more about the <a href="mixer%20_components.html" target="_blank">controls 
+  in the Reason mixer.</a></strong></em></font></p>
+<hr>
+<p><strong><font face="Verdana, Arial, Helvetica, sans-serif">Signal Flow in GarageBand</font></strong></p>
+<p>&nbsp;</p>
+<p><img src="assets/GB_Signal_Flow.jpg" width="1008" height="233"></p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p><strong><font face="Verdana, Arial, Helvetica, sans-serif"><a name="hardwaremixers"></a>Hardware 
+  Mixers</font></strong> 
+</p>
+<p>The Reason mixer is very similar to most hardware mixers. In Reason however, 
+  all the connections are made within an easy, self contained software environment. 
+  Things get more complicated in the physical world where there are a variety 
+  of signal levels, and connectors to take into consideration. In spite of this, 
+  the basic functions and controls will be the same as in the virtual Reason mixer. 
+  The Mackie 1604 is a very common hardware mixer used for a variety of applications. 
+  Let's compare what we've see in Reason with this device.</p>
+<p><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Connections in the Mackie 
+  1604</font></b></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a name="connections"></a><a href="mixer_connections.htm" target="_blank"><b>Input 
+    sources</b></a> <font size="1">(This link has a 108k graphic.</font></font><font size="1" face="Verdana, Arial, Helvetica, sans-serif">)</font> 
+    <ul>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mic</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Low level input from a microphone. The signal needs to be boosted to 
+        line level. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Line</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Line level signal, often from a synthesizer or sampler. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Tape</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Input from the multitrack record deck. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Channel 
+        inserts</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - A patch point which routes a signal out from then back to an individual 
+        channel. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Effects 
+        returns</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - The processed signal from and effects processor. </font>
+    </ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a name="I/O"></a><a href="io_module.htm" target="_blank"><b>Input/Output 
+    Modules</b></a> </font> 
+    <ul>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mic 
+        pre-amps/trim</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Amplifies the low level signal from a microphone. Adjustable. </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Tape 
+        inputs</strong> - Line level input from an individual multitrack tape 
+        channel. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Effect 
+        sends/cue</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Diverts the audio signal from the module, usually for external processing 
+        or a cue mix. </font> 
+        <ul>
+          <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pre-fader</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            - Output not affected by the channel fader. Most often used for cue 
+            sends. </font>
+          <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Post-fader</strong> 
+            - Output sent after channel fader. Most often used for effects sends. 
+            </font>
+        </ul>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Onboard 
+        processing</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Usually some type of equalization and in some larger boards compression. 
+        </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Panning</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Determines placement in the stereo field. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Solo/mute</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        functions </font> 
+        <ul>
+          <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Solo</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            - Only the output of the selected module is heard. </font>
+          <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mute</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            - The output of the selected module is not heard. </font>
+        </ul>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Channel 
+        Fader</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Controls the output of the module. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Output 
+        assignments</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Controls the destination of the module output. </font>
+    </ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a name="master"></a><b>Output 
+    destinations</b></font><font face="Verdana, Arial, Helvetica, sans-serif"><b> 
+    </b><font size="2">controlled in the <a href="mixer_master.htm" target="_blank">Master 
+    section</a> of a mixing board. </font></font> 
+    <ul>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Master 
+        fader</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Controls the final output of the mixing board to the mixdown deck. </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Output 
+        busses</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        - Controls the levels of submix groups. </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Effects 
+        send masters</strong> - Controls the level of the combined channel sends. 
+        </font>
+      <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Cue 
+        mix</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        (most often headphones) </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Monitor 
+        Mix</strong> (most often control room speakers) </font> 
+    </ul>
+		</ul>
+		
+<p>
+		<hr>
+<b><font face="Verdana, Arial, Helvetica, sans-serif"><a name="Reading"></a>This 
+Week's Assignment</font></b> 
+<ul>
+  <li>Continue work on your final project. If you're having trouble with any aspect 
+    of this assignment, seek help from the MTEC-111 tutors available in B10. Check 
+    the times listed in the Announcements section of Course Companion.</li>
+  <li>Try all the basic mix functions we looked at today and set up a basic mix 
+    of your Reason project.</li>
+</ul>
+<p>
+		<hr>
+<font face="Verdana, Arial, Helvetica, sans-serif"><b><a name="Review Questions"></a>Review 
+Questions</b></font> 
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where are two 
+    places where level can be controlled on an input/output module of a hardware 
+    mixing board?</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What is gain 
+    staging and what should we do with audio levels in a console to achieve a 
+    clean, noise and distortion-free signal in a mixing board?</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What controls 
+    the main stereo output of a mixing board?</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What part of 
+    an input-output module do we use to route an audio signal to an effects processor?</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where is the 
+    signal from an effects processor brought into the signal path in a mixing 
+    board?</font></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What part of 
+    an input-output module do we use to adjust the position of that module's output 
+    in a stereo mix?<b></b></font></li>
+</ul>
+<font size="4"><b>
+<hr>
+</b></font> <font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b><a name="Vocabulary"></a>Mixing 
+Vocabulary</b></font> 
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><br>
+  <font size="2">Auxiliary input<br>
+  Buss<br>
+  Eq<br>
+  Fader<br>
+  Gain<br>
+  Gain-staging<br>
+  Insert<br>
+  LED<br>
+  Master fader<br>
+  Mixing board (console, desk)<br>
+  Monitor/cue mix<br>
+  Mono<br>
+  Mute<br>
+  Pan<br>
+  Peak level<br>
+  Post-fader<br>
+  Pre-fader<br>
+  Preamp<br>
+  Return<br>
+  Send<br>
+  Solo<br>
+  Stereo<br>
+  Trim</font></font></p>
+		<p><font size="4"><b>
+		<hr>
+		</b></font><p></p>
+		<p>&nbsp;
+	</body>
+
+</html>

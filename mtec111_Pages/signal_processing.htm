@@ -1,0 +1,274 @@
+<html>
+
+	<!--This file created 8/2/99 7:20 AM by Claris Home Page version 3.0-->
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Signal Processing</title>
+		<x-claris-window top="54" bottom="520" left="66" right="643"><x-claris-tagview mode="full">
+	</head>
+
+	<body>
+		
+<h2><font face="Verdana, Arial, Helvetica, sans-serif">Signal Processing</font></h2>
+		<h3>
+		<hr>
+</h3>
+<address>
+<p><strong><font face="Verdana, Arial, Helvetica, sans-serif">Topics This Week</font></strong></p>
+</address>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#dynamcis processor">Dynamics 
+    Processors</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#spectrum processor">Spectrum 
+    Processors</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#time-based processor">Time-based 
+    Processors</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#processor architecture">Processor 
+    Architecture</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#assignment">This 
+    Week's Assignment</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#Questions">Review 
+    Questions</a> </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#processor vocab">Vocabulary</a> 
+    </font> 
+</ul>
+		<p>
+		<hr>
+		<p></p>
+		
+<p>In a general sense, we could say that any time audio is converted from acoustic 
+  energy into electrical energy, sound is being processed. Any device in the audio 
+  chain, from a microphone to amplifiers and speakers, alters or colors the original 
+  sound in some way. Practically though, we'll limit our discussion to devices 
+  intended to manipulate sound in some way, either to creatively alter a signal 
+  or to correct a problem.</p>
+		
+<hr>
+<font face="Verdana, Arial, Helvetica, sans-serif"><strong>Effects Categories</strong></font> 
+<p><font size="4"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a name="dynamcis processor"></a></font></b></font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><a href="dynamics.html" target="_blank">Dynamics 
+  processors</a> </b></font></p>
+<p>Dynamics processors affect the loudness of a sound over time, and help us correct 
+  levels, increase the sustain of decaying sounds, and filter out background noise. 
+  <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>Follow the link 
+  for a more detailed explanation.</em></font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Compression - Reduces 
+    the dynamic range of signal. Main Controls: </font>
+    <ul>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Threshold - The level 
+        at which the circuit becomes active. </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Ratio - 
+        Ratio between input and output. e.g.: in a 4:1 ratio, an increase of 8-dB 
+        results in a 2-dB increase in signal. </font> 
+    </ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Limiting - A type of 
+    compression used in recording sources that have high transients. Generally 
+    the ratio is around 10:1. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Expansion - Increases 
+    the dynamic range. Increases the gain of loud signals and reduces the gain 
+    of quiet signals. Used for noise reduction. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Gate - Prevents signals 
+    below a certain amplitude from passing. </font>
+</ul>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><a name="spectrum processor"></a><a href="spectrum.html" target="_blank">Spectrum 
+  Processors</a></b> </font></p>
+<p>Spectrum processors are filters or equalizers used to alter the harmonic content 
+  of a signal. These processors affect the tone color of a sound and allow us 
+  to equalize audio, create special tone-color effects like wah-wah, and help 
+  us create clarity in a mix. Generally a filter will boost or cut selected frequencies 
+  by an amount expressed in dB. The range of frequencies effected is referred 
+  to as bandwidth or &quot;Q.&quot; Bandwidth is usually expressed in octaves. 
+  <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>Follow the link 
+  for a more detailed explanation.</em></font> </p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Types Include:</font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pass Band Filters - Usually 
+    found in synthesizers. </font>
+    <ul>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Low Pass - Allows 
+        frequencies below the cutoff to pass. Reduces high frequencies. </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">High Pass - Allows 
+        frequencies above the cutoff to pass. Reduces low frequencies. </font>
+    </ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Shelving Filter - Reduces 
+    all frequencies above or below cutoff by a certain amount. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Parametric - Boosts or 
+    cuts frequencies within a selectable bandwidth. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Graphic - Divides 
+    the audio spectrum into equally spaced center frequencies. e.g.: Single Octave 
+    Graphic EQ: divides audible spectrum into 11 bands an octave apart. </font> 
+</ul>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">20 Hz, 40 Hz, 80 Hz, 160Hz, 
+  320Hz, 640Hz, 1.25kHz, 2.5kHz, 5kHz, 10kHz, 20kHz.</font></p>
+<p><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><b><a name="time-based processor"></a></b></font><a href="time_based.html" target="_blank"><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="2">Time-based 
+  processors</font></b></font></a></p>
+<p>These processors repeat the signal over time and create a variety of musical 
+  effects such as reverb, chorus, flanging, echo, slap-back delay, etc&#133; <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em>Follow 
+  the link for a more detailed explanation.</em></font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Modulation 
+    Effects</strong> - These effects have very short delay times that continuously 
+    change.</font> 
+    <ul>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Flange - 
+        Very short (2-20 ms) delay which causes phase cancellation. </font> 
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Chorus/Doubling 
+        - Short delay (15-40ms) used to make a signal sound thicker or richer. 
+        Chorusing is often accomplished by using subtle changes in pitch that 
+        change continuously.</font> 
+    </ul>
+  <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Delay 
+    Effects</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+    - Signal is delayed. Repeats are discreet events usually defined by the length 
+    of delay and the number of repeats. </font></li>
+  <ul>
+    <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Slapback/Echo 
+      - Audible delay(s) of the original signal. </font> 
+  </ul>
+  <li><a href="reverb.html" target="_blank"><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Reverb</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+    </font></a><font size="2" face="Verdana, Arial, Helvetica, sans-serif">- Artificially 
+    creates a sense of space using closely spaced random echoes. No repeats are 
+    heard. Reverb is usually described by: </font> 
+    <ul>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Type of 
+        space, as well as its size e.g.: Room, Hall. etc. Often defined by frequency 
+        response. </font> 
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Decay -The 
+        amount of time a sound continues to be heard. </font> 
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Early Reflection 
+        is the amount of time before reverb is heard. </font> 
+    </ul>
+  <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pitch 
+    Shifting </font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">- 
+    Pitch is tuned up or down in either musical steps or cents. </font>
+</ul>
+<hr>
+<p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b><a name="processor architecture"></a>Processor 
+  Architecture </b></font></p>
+<ul>
+  <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Dedicated 
+    Effect</font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+    - A device which does only one type of effect. Generally higher end devices 
+    designed to perform particularly well. </font>
+  <li><strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Multi 
+    Effects </font></strong><font size="2" face="Verdana, Arial, Helvetica, sans-serif">- 
+    A device which can process more than one effect simultaneously </font> 
+    <ul>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Serial Effects 
+        </font>
+      <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Parallel 
+        Effects </font> 
+    </ul>
+		</ul>
+		<p>
+		<hr>
+<p><font size="3"><b><font face="Verdana, Arial, Helvetica, sans-serif"><a name="assignment"></a>This 
+  Week's Assignment</font></b></font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Assignments:</b> 
+  </font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Try the specific 
+  effects processors in your version of Reason. What can you use these for?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What type of effect 
+  would be useful for you to use with your principle instrument? Use the Web to 
+  research some of the types of effects devices available today and report back 
+  to the class discussion area found in Course Companion.</font></p>
+		<p>
+		<hr>
+		<p></p>
+		
+<p><font size="4"><b><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><a name="Questions"></a>Review 
+  Questions</font></b></font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What are the different type 
+  of dynamics processors and what could they be used for?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Think about the characteristics 
+  of the different types of filters we've talked about.</font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the difference 
+    between a Pass Band and a Shelving Filter? </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the difference 
+    between a Shelving Filter and a Parametric EQ? </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the difference 
+    between a Parametric EQ and a Graphic EQ? </font>
+</ul>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What are the different types 
+  of Time-based Processors and what could they be used for?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the difference between 
+  a Flanging and Chorusing?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the difference 
+  between a Delay effect and Reverb?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What parameters can be controlled 
+  when we add Reverb to a signal?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The way we describe 
+  Signal Processing is somewhat subjective, but in general what processors would 
+  you use to archive the following results:</font></p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make a bass sound &quot;punchier.&quot; 
+    </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make a singer sound like 
+    they are in a large hall. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Remove 60 Hz hum from 
+    a signal. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Control how bright your 
+    stereo system sounds. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make guitar chords sound 
+    fuller and richer. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Remove other instruments 
+    &quot;bleeding&quot; into drum microphones. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Add Comb Filtering to 
+    a signal. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Reduce noise in a guitar 
+    rig when the instrument is not being played. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Prevent levels in a digital 
+    recording from exceeding a maximum level. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make a single instrument 
+    sound like two instruments playing in unison. </font>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Control the overall frequency 
+    response in a PA system. </font> 
+</ul>
+		<p><font size="4"><b>
+		<hr>
+		</b></font>
+<p></p>
+<p><font size="3"><b><font face="Verdana, Arial, Helvetica, sans-serif"><a name="processor vocab"></a>Signal 
+  Processor Vocabulary</font></b></font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Band Pass Filters<br>
+  Bandwidth or Q<br>
+  Cents<br>
+  Chorus<br>
+  Compression<br>
+  Compressor<br>
+  dB<br>
+  Decay<br>
+  Doubling<br>
+  Dynamic Range<br>
+  Early Reflection<br>
+  Equalizers<br>
+  Expansion<br>
+  Filters<br>
+  Flanging<br>
+  Gate<br>
+  Graphic EQ<br>
+  High Pass Filter<br>
+  Limiter<br>
+  Low Pass Filter<br>
+  Multi-effects<br>
+  Noise Reduction<br>
+  Parametric EQ<br>
+  Pitch<br>
+  Early reflections<br>
+  Ratio<br>
+  Reverb<br>
+  Shelving EQ<br>
+  Slapback<br>
+  Threshold<br>
+  Transients</font> </p>
+		<p><font size="4"><b>
+		<hr>
+		</b></font><p></p>
+		<p>&nbsp;</p>
+		<p>&nbsp;
+	</body>
+
+</html>
