@@ -1,0 +1,348 @@
+<html>
+<head>
+<title>Time-based Effects </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../DTMP_reference/Week1/musicianship101.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h3 class="topic_header"><a name="top"></a><font face="Verdana, Arial, Helvetica, sans-serif">Time-Based 
+  Effects </font></h3>
+<p class="topic_header"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><em>Topics:</em></strong></font></p>
+<ul>
+  <li><a href="#OV_time"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Overview</font></a></li>
+  <li><a href="#typical_parameters"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Typical 
+    Delay Parameters</font></a></li>
+  <li><a href="#delay"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+    Delay Effects</font></a></li>
+  <li><a href="#timed_delays"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Timed 
+    Delays </font></a></li>
+  <li><a href="#D_F_C_effects"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Doubling/Flanging/Chorus 
+    Effects</font></a></li>
+  <li><a href="reverb.html" target="_blank"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Reverb</font></a></li>
+</ul>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><strong><a name="OV_time"></a>Overview</strong></font></p>
+<p>Many of the effects that are most noticeable in modern music production are 
+  time-based. These are achieved by mixing a signal with a delayed copy of itself. 
+  Unlike dynamics and filter effects, which are often used to enhance recorded 
+  sound without being obvious to the listener, we use these to creatively alter 
+  the sound of our audio source.</p>
+<p>Often, these effects become the sonic signatures of the artists who use them. 
+  In the 1980s, Andy Summers of the The Police immortalized the sound of chorused 
+  guitar in his work on all of the group's hit records. Longer delays gave David 
+  Gilmore of Pink Floyd his characteristic spacious solo guitar sound, while delays 
+  timed to the tempo of a song propelled the rhythmic guitar figures characteristic 
+  of the Edge's work with U2.</p>
+<hr>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif"><a name="Typical_parameters"></a>Typical 
+  Delay Parameters</font></h4>
+<p>We can produce a range of effects by delaying a source signal by varying amounts. 
+  In order to be heard, the delayed signal needs to be combined with the original, 
+  unprocessed signal. The unprocessed signal is often called the &quot;dry&quot; 
+  signal and the processed signal is called the &quot;wet&quot; signal. When we 
+  use delays as insert effects, we'll always have the option to set the balance 
+  between the the two.</p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>The diagram below 
+  illustrates the signal flow in a typical delay processor. </strong></font> </p>
+<p align="center"><img name="Delay" src="assets/Delay.gif" width="400" height="180" border="0"> 
+</p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The 
+  signal path in a delay processor</font></p>
+<hr>
+<p><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Common parameters that 
+  we'll adjust in delay effects are:</font></b> </p>
+<ul>
+  <li>Delay time: the amount of time a signal is delayed, usually set in milliseconds 
+    (ms)</li>
+  <li>Mix: the balance between the processed and unprocessed signal that is output 
+    from a device</li>
+  <li>Feedback: the number of times a delayed signal will repeat. A minimum value 
+    usually indicates one repeat, while a maximum value means an infinite repeat.</li>
+</ul>
+<p>Take a look at DDL-1, the delay unit found in Reason, and see where these parameters 
+  are adjusted. You'll notice that in addition to setting delay time in milliseconds, 
+  Reason also lets you time discrete delays to the tempo of a song. </p>
+<h4 align="center"><img src="assets/DDL1.gif" width="344" height="67" border="2"></h4>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Reason's 
+  DDL-1 delay</font></p>
+<hr>
+<h3 class="topic_header"><a name="delay" id="delay"></a><font face="Verdana, Arial, Helvetica, sans-serif">Delay</font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+  Effects </font></h3>
+<p>Perhaps the most obvious delay effect is <b>echo</b>, which refers to discrete 
+  repetitions of a sound over time. Even if we've never been near a mountain, 
+  we're all probably aware of the effect of yelling &quot;HELLO!&quot; in a canyon 
+  and hearing our voice repeat in the distance. This type of delay is one way 
+  to give a recorded performance a sense of space.</p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Slapback</font></h4>
+<p>We'll begin to hear a delayed sound as a distinct repeat at a delay time of 
+  around 60ms. As you recall, sound travels about one foot for every millisecond 
+  of delay time. A 60ms delay is the amount of time it takes for a sound to travel 
+  to and be reflected from a wall 30 feet from the source. This type of very short 
+  echo is called <b>slapback, </b>and it's typically used to simulate the sound 
+  of a performance in a small, to medium-size empty room. The delay times used 
+  to produce slapback usually range from 75 to 125ms, and feedback is set short, 
+  so we'll only hear one or two repeats.</p>
+<p align="center"><img src="assets/Reflect-30.gif" width="331" height="173"></p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It 
+  takes 60ms for sound to travel 60 feet to and from a surface</font></p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Echo </font></h4>
+<p>We usually think of echo as having longer delay times and multiple repeats. 
+  If we continue to think of echo as simulating an acoustic phenomenon, longer 
+  delay times usually give the impression of larger spaces. Imagine playing or 
+  singing in a sports arena, the typical venue for large touring rock show. A 
+  room the size of a football field (100 yards or 300 feet long) will produce 
+  600ms echoes. These types of longer delay times, when used subtly in a mix, 
+  can help give the illusion of a vocal or soloist performing in a large space.</p>
+<p align="center"><img src="assets/Reflect-300.gif" width="331" height="173"></p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">It 
+  takes 300ms for sound to travel 300 feet to and from a surface</font></p>
+<hr>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif"><a name="timed_delays"></a>Timed 
+  Delays</font></h4>
+<p>One of the problems with longer delay times that anyone who has played in even 
+  their high school gym has encountered is that these echoes can often repeat 
+  out of time with the musical tempo. Whenever something repeats, it sets up the 
+  expectation of a tempo in a listener, and echo is no different. </p>
+<p>You'll notice that the Tape Delay plug-in that we'll be using in Logic allows 
+  you to set delay time using either milliseconds or tempo. This is a very convenient 
+  way to create delays that are timed to the tempo of a song. Although plug-ins 
+  that are integrated in desktop audio programs are increasingly making use of 
+  this feature, there are many processors, both hardware and software, that won't 
+  know about the tempo of your song. Let's do a little math to help us calculate 
+  delay times for rhythmic values at any tempo.</p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">The Math</font></h4>
+<p> We express musical tempos in beats per minute or <b>BPM. </b>If our tempo 
+  is 120BPM, how long is one beat? Since our answer will be expressed in milliseconds, 
+  let's think of a minute as 60,000 milliseconds so BPM could be expressed as 
+  60,000 divided by tempo.</p>
+<p><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Let's pull out 
+  our calculators!</font></b></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">What's the duration 
+  of a quarter note at 120 BPM?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">60,000ms / 120 
+  = 500ms</font></p>
+<p>So, if the tempo of our song is 120 BPM, setting a delay time of 500ms will 
+  give us a perfect quarter-note delay. Once we know the duration of a quarter 
+  note at any tempo, it's easy to figure out the delay time needed to produce 
+  any other rhythmic figure.</p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Take a 
+  look at the following chart to see how this simple formula can be used to find 
+  delay times for rhythmic values at any tempo.</strong></font></p>
+<table width="485" border="1" cellspacing="0" cellpadding="5" height="70" align="center">
+  <tr> 
+    <th colspan="3"> <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif">Delay 
+        Times for Common Rhythmic Values at 120 BPM</font></div></th>
+  </tr>
+  <tr> 
+    <th width="124"> <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif">Rhythmic 
+        Value</font></div></th>
+    <th width="148"> <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif">Multiplier</font></div></th>
+    <th width="175"> <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif">Delay 
+        Time </font></div></th>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Whole 
+        Note</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x 4</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">2000ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Half 
+        Note</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x 2</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">1000ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x 1</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">500ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">8th 
+        Note</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x .5</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">250ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">16th 
+        Note</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x .25</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">125ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">8th 
+        Note Triplet</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x .333</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">167ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note Triplet</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x .666</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">333ms</font></div></td>
+  </tr>
+  <tr> 
+    <td width="124"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Half 
+        Note Triplet</font></div></td>
+    <td width="148"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Quarter 
+        Note x 1.333</font></div></td>
+    <td width="175"> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">667ms</font></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Let's try one for 
+  practice. What delay time would be needed to produce half-note echoes at 97 
+  BPM?</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Answer:</font></p>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">A quarter note 
+  at 97 BPM is: 60,000 / 97 = 619ms<br>
+  For a half-note delay: 619ms x 2 = 1238ms.</font></p>
+<p></p>
+<hr>
+<h3 class="topic_header"><a name="D_F_C_effects" id="D_F_C_effects"></a><font face="Verdana, Arial, Helvetica, sans-serif">Doubling/Flanging/Chorus 
+  Effects </font></h3>
+<p class="body">Rock and pop music production places a high priority on getting 
+  a big or larger-than-life sound from instruments such as guitars and vocals. 
+  Orchestras and choral groups are traditional examples of more is better when 
+  trying to achieve a big sound. If you're working on a big budget CD or soundtrack 
+  project, then assembling and recording the required ensemble to achieve a big 
+  sound may be possible. However, there are ways to achieve similar effects in 
+  the virtual world of desktop production. </p>
+<h4 class="body"><font face="Verdana, Arial, Helvetica, sans-serif">Doubling</font></h4>
+<p class="body">The easiest way to make an instrumental part sound bigger is to 
+  double it by playing in unison with it. One way to achieve this effect is to 
+  have a player overdub an exact copy of their part on another track in a process 
+  called<b> double-tracking</b>. This demands a tremendous amount of skill from 
+  a performer as well as many extra tracks. </p>
+<p class="body"> The delay effect of doubling uses a very short delay time that 
+  can't be heard as a repetition, somewhere in the range of 20 to 50ms. The idea 
+  is to simulate the sound of two instruments playing in unison. Since two musicians 
+  will never play at exactly the same time, using a slight delay will simulate 
+  this. This electronic way of creating instrumental doubling is very popular 
+  when there's only a limited number of tracks for recording.</p>
+<h4 class="body"><font face="Verdana, Arial, Helvetica, sans-serif">Modulation 
+  Effects</font></h4>
+<p class="body"> When musicians play together or double-track, they actually won't 
+  play exactly 20 to 50ms later than the original performance. The amount of delay 
+  will be changing all the time. To accurately simulate this electronically, we'll 
+  need to automatically change delay times. When we use some electronic means 
+  to automatically change a parameter in an effects processor or synthesizer, 
+  we call it <b>modulation</b>. Most delay devices will use a<b> low frequency 
+  oscillator (LFO)</b> to automatically make the delay time slightly longer or 
+  shorter. We'll be looking at how an <b>LFO </b>works in greater detail in upcoming 
+  lessons on synthesizers. For right now, we can think of it as a tool that will 
+  continuously sweep a range of parameters, in our case, delay times. Flanging 
+  and chorusing are time-based effects that use an LFO to change delay times. 
+  We can think of them as <b>modulation effects.</b></p>
+<h4 class="body"><b><font face="Verdana, Arial, Helvetica, sans-serif">Flanging 
+  </font></b></h4>
+<p class="body">Flanging is produced when a signal is delayed a very short amount 
+  of time, on the order of .1 to 15 milliseconds, and is mixed with the dry signal. 
+  As these two are combined, multiple bands of frequencies are boosted and cut 
+  to produce a characteristic &quot;whooshing&quot; sound called <b>comb filtering</b>. 
+  With the LFO changing the delay time, this effect sweeps through the audible 
+  range. We can think of flanging as a kind of sophisticated filtering effect 
+  that might be simulated by boosting or cutting several bands on a graphic EQ 
+  at the same time.</p>
+<p class="body">The diagram below illustrates how an audio signal is processed 
+  in flanging, as well as some typical parameters we use to control the effect. 
+  Compare these to the controls in Logic's Flanger plug-in.</p>
+<table width="30" border="0" cellspacing="1" cellpadding="5" align="center">
+  <tr> 
+    <th colspan="2"> <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif">Flanger 
+        Functions and Parameters</font></div></th>
+  </tr>
+  <tr> 
+    <td> <p><img src="assets/Mod_delay.gif" width="400" height="180"></p>
+      <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Signal 
+        flow in a typical flanger</font></p></td>
+    <td> <p><img src="assets/Logic_flanger.gif" width="272" height="153"></p>
+      <p>&nbsp;</p>
+      <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Flanger 
+        settings in a Logic plug-in</font></p></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> <ul>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">An LFO 
+          controls the amount of time a signal is delayed.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Intensity 
+          or depth determines how much the LFO will control delay time, which 
+          determines how pronounced or deep the effect will be.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Speed 
+          controls the rate of the LFO, which determines how fast the comb filtering 
+          effect sweeps through a range of frequencies.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Feedback 
+          controls the amount of delayed signal that's brought back into the delay 
+          section.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mix determines 
+          the blend between wet and dry signals. </font></li>
+      </ul></td>
+  </tr>
+</table>
+<p class="body">&nbsp;</p>
+<p class="body"><b><font face="Verdana, Arial, Helvetica, sans-serif">Chorusing</font></b></p>
+<p class="body">Chorusing is a way of simulating the sound of an ensemble performing 
+  musical parts. By increasing the delay time we used in flanging to between 15 
+  and 50 milliseconds, we can begin to approximate the timing variations that 
+  occur in a group performance. Although this is a way we can create a chorus 
+  effect using delay, most chorus effects will process a signal by using an LFO 
+  to control subtle changes in pitch. After all, even in the closest unison, performers 
+  will still be slightly out of tune with each other.</p>
+<h4 class="body" align="center">&nbsp;</h4>
+<table width="30" border="0" cellspacing="1" cellpadding="5" align="center">
+  <tr> 
+    <th colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif">Chorus 
+      Functions and Parameters</font></th>
+  </tr>
+  <tr> 
+    <td> <p><img src="assets/Mod_pitch.gif" width="400" height="180"></p>
+      <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Signal 
+        flow in a typical flanger</font></p></td>
+    <td> <p><img src="assets/Logic_chorus.gif" width="271" height="137"></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Chorus 
+        settings in a Logic plug-in</font></p></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> <ul>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">An LFO 
+          sweeps between shifting the pitch of a signal slightly sharp and flat.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Intensity 
+          or depth determines how sharp or flat the processed pitch will be.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Speed 
+          controls the rate of the LFO, which determines how fast we sweep between 
+          sharp and flat.</font></li>
+        <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mix determines 
+          the blend between wet and dry signals. </font></li>
+      </ul></td>
+  </tr>
+</table>
+<h4 class="body" align="left">&nbsp;</h4>
+<p></p>
+<hr>
+<div align="center"></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div align="center"></div>
+</body>
+</html>

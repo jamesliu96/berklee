@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Recording Tools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../Week1/musicianship101.css" type="text/css">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_initInteractions();MM_preloadImages('assets/Reason_transport/reasonTransportc_r1_c1.gif','assets/Reason_transport/reasonTransportc_r1_c1_f4.gif','assets/Reason_transport/reasonTransportc_r1_c1_f7.gif','assets/Reason_transport/reasonTransportc_r1_c1_f6.gif','assets/Reason_transport/reasonTransportc_r1_c1_f5.gif','assets/Reason_transport/reasonTransportc_r1_c1_f3.gif','assets/Reason_transport/reasonTransportc_r1_c1_f2.gif')">
+<h3><font face="Verdana, Arial, Helvetica, sans-serif"><a name="top"></a> <b><font face="Verdana, Arial, Helvetica, sans-serif">Recording 
+  Tools</font></b></font></h3>
+<hr>
+<p class="body"><span class="body">Once you are capable of producing sounds using 
+  a physical or virtual instrument, you will want to capture either the performance 
+  or the actual sound. To do this you may use either a <b>MIDI sequencer</b> or<b> 
+  </b>an<b> audio recorder</b>. </span></p>
+<p class="body"><span class="body"><b class="subtopic_header"><font face="Verdana, Arial, Helvetica, sans-serif">MIDI 
+  Sequencer</font></b> </span> </p>
+<p class="body">The Musical Instrument Digital Interface defines specific musical 
+  gestures that are represented by series' of digital commands. A MIDI sequencer 
+  keeps track of commands issued, the order they are issued in, and and their 
+  location in bars and beats .It stores them in memory in the sequence in which 
+  they occurred. Once a MIDI performance is recorded, the sequence of musical 
+  events can be played back and edited with a great degree of specificity. </p>
+<p class="body"><span class="body"><b class="subtopic_header"> <font face="Verdana, Arial, Helvetica, sans-serif">Audio 
+  Recorder</font></b></span><b class="subtopic_header"></b></p>
+<p class="body">The sound produced by an instrumental performance can also be 
+  captured using an audio recording device. In the physical world this may be 
+  a tape recorder or a dedicated hard disk recording system. Today's computers 
+  are powerful enough to emulate such a recording device using the hardware and 
+  software you already own. By using the computer as a virtual recording device 
+  to capture audio from the physical world, you have the power to combine this 
+  audio with captured MIDI performances in a single software environment.</p>
+<p class="body"><span class="body">For this course we will be using <i>Reason</i>'s 
+  Sequencer. In later semesters, you will use more advanced MIDI and audio recording 
+  tools. </span></p>
+<hr>
+<p class="body">This is <span class="body"><i>Reason</i>'s MIDI Sequencer</span> 
+  tool. </p>
+<p class="body"><font color="#FF0000"><img src="assets/reasonSequencer.gif" width="602" height="238"> 
+  </font></p>
+<hr>
+<font face="Verdana, Arial, Helvetica, sans-serif"><span class="topic_header"><strong>MIDI 
+Sequencers</strong></span></font> 
+<p><br>
+  While there are a number of hardware-based MIDI sequencers available on the 
+  market today, we will focus on computer software for capturing and editing MIDI 
+  performances. In general, these look a lot like real audio recorders, complete 
+  with transport buttons, but also have a great many other tools for manipulating 
+  MIDI information. </p>
+<b><font size="3" face="Verdana, Arial, Helvetica, sans-serif">MIDI Recording</font></b> 
+<p>Any MIDI data sent from a controller is recorded into a sequencer track. A 
+  metronome is required so a performance can match the rhythmic grid set up in 
+  the sequencer. Much of what we learn about MIDI recording and editing we can 
+  apply to working with audio in hard-disk recording.</p>
+<p>There are four ways of capturing a MIDI performance:</p>
+<ul>
+  <li><strong>Replace</strong> - When MIDI data is recorded to a track, events 
+    from a previous recording are removed, as would occur in audio tape recording.</li>
+  <li><strong>Overdub</strong> - When MIDI data is recorded to a track, new events 
+    are added to existing material. </li>
+  <li><strong>Punch Mode</strong> - allows the user to define when recording starts 
+    and stops.</li>
+  <li><strong>Loop Mode</strong> - allows the user to keep recording successive 
+    passes between to locations. </li>
+</ul>
+<p>We'll be getting into MIDI recording starting in next week's class.</p>
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="reasonTransportcontrols.png" fwbase="reasonTransportcontrols.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr> 
+    <td><img src="assets/Reason_transport/spacer.gif" width="640" height="1" border="0"></td>
+    <td><img src="assets/Reason_transport/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr> 
+    <td><img name="reasonTransportc_r1_c1" src="assets/Reason_transport/reasonTransportc_r1_c1.gif" width="640" height="173" border="0" usemap="#m_reasonTransportc_r1_c1"></td>
+    <td><img src="assets/Reason_transport/spacer.gif" width="1" height="173" border="0"></td>
+  </tr>
+  <tr> 
+    <td><img name="reasonTransportc_r2_c1" src="assets/Reason_transport/reasonTransportc_r2_c1.gif" width="640" height="2" border="0"></td>
+    <td><img src="assets/Reason_transport/spacer.gif" width="1" height="2" border="0"></td>
+  </tr>
+  <map name="m_reasonTransportc_r1_c1">
+    <area shape="rect" coords="287,35,389,52" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f4.gif',1)"  >
+    <area shape="rect" coords="434,23,534,50" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f7.gif',1)"  >
+    <area shape="rect" coords="433,10,534,22" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f6.gif',1)"  >
+    <area shape="rect" coords="391,35,431,52" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f5.gif',1)"  >
+    <area shape="rect" coords="217,8,283,31" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f3.gif',1)"  >
+    <area shape="rect" coords="181,12,217,30" href="#" onMouseOut="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1.gif',1);MM_swapImgRestore()"  onMouseOver="MM_swapImage('reasonTransportc_r1_c1','','assets/Reason_transport/reasonTransportc_r1_c1_f2.gif',1)"  >
+  </map>
+</table>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This 
+  is the transport window in Reason. Use your mouse to see where the controls 
+  for the various record modes are located.</font></p>
+<hr>
+<p>&nbsp;</p>
+</body>
+</html>

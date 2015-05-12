@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>Spectrum Processing: Filters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../DTMP_reference/Week1/musicianship101.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h3 class="topic_header"><font face="Verdana, Arial, Helvetica, sans-serif">Spectrum 
+  Processing: Filters</font></h3>
+<p class="topic_header"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><em>Topics:</em></strong></font></p>
+<ul>
+  <li><a href="#overview"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Overview</font></a></li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header"><a href="#cutoff">Cutoff 
+    Filters</a></font></li>
+  <li><a href="#shelf"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Shelving 
+    Filters</font></a></li>
+  <li><a href="#parametric"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Parametric 
+    EQ</font></a></li>
+  <li><a href="#graphic"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Graphic 
+    EQ </font></a></li>
+</ul>
+<hr>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><strong><a name="overview"></a>Overview</strong></font></p>
+<p>Most of you have seen filters as the Treble and Bass settings on a home stereo, 
+as well as more detailed tone controls called graphic equalizers, in a car stereo 
+system. In this topic we'll talk about some of the more specialized tools used 
+in music production. 
+</p><p><font color="#000000">The tools we'll use to process spectrum are called filters. 
+  As the name implies, filters are used to allow some frequencies to pass while 
+  reducing or eliminating the levels of others. As we'll see, some types of filters 
+  allow us to boost as well as cut a given range of frequencies. The range of 
+  frequencies affected by a filter is determined by the<b> cutoff frequency</b>. 
+  Much like the threshold in a dynamics processor that determines when a signal 
+  is affected, the cutoff frequency determines what part of a signal's spectrum 
+  will be processed. </font></p>
+<p><font color="#000000">We'll be looking at three general categories of filters. 
+  As we'll see, different types of filters will have their own sets of controls. 
+  </font></p>
+<table width="640" border="1" align="center" cellpadding="1" cellspacing="1">
+  <tr> 
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Filter Type</font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Filter Name</font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Function </font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Controls</font></th>
+  </tr>
+  <tr> 
+    <td rowspan="2"><div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Cutoff 
+        Filter</b></font></div></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Low Pass</font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Filters frequencies 
+      above the cutoff</font></td>
+    <td rowspan="2"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">&#149; 
+      Cutoff frequency</font></td>
+  </tr>
+  <tr> 
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">High Pass</font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Filters frequencies 
+      below the cutoff</font></td>
+  </tr>
+  <tr> 
+    <td rowspan="2"><div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Shelving 
+        Filter</b></font></div></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">High Shelf</font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Boosts or 
+      cuts frequencies above the cutoff</font></td>
+    <td rowspan="2"> <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">&#149; 
+        Cutoff frequency<br>
+        &#149; Boost or cut</font></p></td>
+  </tr>
+  <tr> 
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Low Shelf</font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Boosts or 
+      cuts frequencies below the cutoff</font></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Parametric</b></font></div></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Parametric 
+      EQ</font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Boosts or 
+      cuts frequencies around the cutoff</font></td>
+    <td> <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">&#149; 
+        Cutoff frequency<br>
+        &#149; Boost or cut<br>
+        &#149; Bandwidth</font></p></td>
+  </tr>
+</table>
+<p><font color="#000000">Once again, like dynamics processors, when we use a filter, 
+  it will be applied directly in the path of a signal, so we'll use it as a channel 
+  insert-type effect</font><font color="#FF0000">.</font></p>
+<hr>
+<hr>
+<h3 class="topic_header"><a name="cutoff" id="cutoff"></a><font face="Verdana, Arial, Helvetica, sans-serif">Cutoff 
+  Filters</font></h3>
+<p>Cutoff filters are used to remove frequencies above or below a cutoff frequency. 
+  Although these are typically found in synthesizers, they are now being being 
+  used in music production as well, and are common in many EQ plug-ins.</p>
+<p>The cutoff frequency determines when the filter becomes active and is generally 
+  the only parameter we can adjust. The frequencies being processed are divided 
+  into two ranges, or <b>bands,</b> that will either be removed or allowed to 
+  pass. Frequencies that are not affected are part of what we call the <b>pass 
+  band </b>since they are allowed to &quot;pass through&quot; the filter unaffected, 
+  while frequencies that are removed are part of the <b>stop band</b>. </p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Types of Cutoff Filters</font></h4>
+<p>These filters get their names from their pass bands, or the range of frequencies 
+  that are unaffected. </p>
+<ul>
+  <li>A<b> low-pass filter</b> reduces frequencies above the cutoff, allowing 
+    those below to pass.</li>
+  <li>A <b>high-pass filter</b> reduces frequencies below the cutoff, allowing 
+    those above to pass.</li>
+</ul>
+<p>This can be somewhat confusing and may take some getting used to since the 
+  range called out in the name is the opposite of the range being reduced.</p>
+<ul>
+  <li>Low-pass filters reduce higher frequencies.</li>
+  <li> Hi-pass filters reduce lower frequencies. </li>
+</ul>
+<p>Got it! This will become much clearer once we look a some examples.</p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Filter Slope</font></h4>
+<p>One important thing to remember about filters is that they reduce a range a 
+  frequencies gradually. Let's say we've set a low-pass filter to remove frequencies 
+  above 1000Hz. This means that the filter will start reducing the level of frequencies 
+  at 1000Hz. In the diagrams below you'll notice that the level of frequencies 
+  in the stop band are reduced starting just before cutoff, and they are not entirely 
+  removed until sometime later.</p>
+<p>Since low- and high-pass filters are essential parts of a synthesizer, we'll 
+  take a closer look at cutoff filter slope in a future lesson.</p>
+<hr>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Take a 
+  look at the diagrams below to get a general sense of how these filters work<font color="#FF0000">.</font></strong></font></p>
+<p align="center"><font color="#FF0000"><img src="assets/LowPass.gif" width="400" height="300"></font></p>
+<hr>
+<p align="center"><font color="#FF0000"><img name="HiPass" src="assets/HiPass.gif" width="400" height="300" border="0"> 
+  </font></p>
+<hr>
+<hr>
+<h3 class="topic_header"><a name="shelf" id="shelf"></a><font face="Verdana, Arial, Helvetica, sans-serif">Shelving 
+  Filters</font></h3>
+<p>A <b>shelving filter</b> will boost or cut frequencies above or below a cutoff. 
+  This adds an additional level of control to the cutoff filters we just looked 
+  at by allowing us to either increase or decrease a range of frequencies by varying 
+  amounts. </p>
+<ul>
+  <li>A <b>high-shelf filter</b> boosts or cuts a range of frequencies above a 
+    cutoff.</li>
+  <li>A<b> low-shelf filter </b>boosts or cuts a range of frequencies below a 
+    cutoff.</li>
+</ul>
+<p>As we said earlier, this type of filter is commonly found in everything from 
+  home stereos to guitar amplifiers. One important distinction, though, is that 
+  in consumer and musical instrument applications, the cutoff frequency is fixed. 
+  We can't change it, and in most cases we don't know where the cutoff frequency 
+  is. So, &quot;treble,&quot; although commonly understood to mean &quot;high 
+  frequencies,&quot; can actually be anywhere above 5 or 6kHz. Shelving filters 
+  used in desktop production will always let you adjust the cutoff frequency. 
+  You'll notice from the diagrams below that there's a slope getting to the range 
+  of frequencies defined by the cutoff.</p>
+<hr>
+<p align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>These 
+  diagrams show the response curves for low and high-shelf filters:</strong></font></p>
+<p align="center"><font color="#FF0000"><img src="assets/HiShelf.gif" width="400" height="300"></font></p>
+<hr>
+<p align="center">&nbsp;</p>
+<p align="center"><font color="#FF0000"><img src="assets/LowShelf.gif" width="400" height="300"></font></p>
+<hr>
+<hr>
+<h3 class="topic_header"><a name="parametric" id="parametric"></a><font face="Verdana, Arial, Helvetica, sans-serif">Parametric 
+  EQ </font></h3>
+<p>A <b>parametric EQ</b> can boost or cut frequencies in a range both above and 
+  below a cutoff frequency. When we listen to the sound of a recorded instrument, 
+  there's usually a limited range of frequencies that need to be boosted or cut. 
+  Since a parametric EQ allows us to focus on a particular frequency range, it's 
+  perhaps the most useful type of filter in desktop production.</p>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Bandwidth</font></h4>
+<p>The range of frequencies around the cutoff that are affected by a parametric 
+  EQ is called the bandwidth or &quot;Q&quot; of the filter. This can be adjusted 
+  to perform different types of tasks. A narrow &quot;Q&quot; can be used to remove 
+  a particular frequency such as the 60Hz hum caused by outside electrical interference 
+  in the audio signal. A wider &quot;Q&quot; is used to adjust a general range 
+  of frequencies, as might be the case if we wanted to clarify a recording that 
+  sounder muddy or muffled.</p>
+<p>The parametric EQ is, in a sense, the next step on the evolutionary scale of 
+  filters we've looked at so far. As a review, let's look at a roundup of filter 
+  types and the parameters available in each.</p>
+<table width="500" border="1" cellspacing="0" cellpadding="5" align="center">
+  <tr> 
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Control</font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Filter Cutoff</font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Amount of Boost or 
+      Cut</font></th>
+    <th><font face="Verdana, Arial, Helvetica, sans-serif">Bandwidth</font></th>
+  </tr>
+  <tr> 
+    <th> <div align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Cutoff 
+        Filter</font></div></th>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">NO</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">NO</font></div></td>
+  </tr>
+  <tr> 
+    <th> <div align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Shelving 
+        Filter</font></div></th>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">NO</font></div></td>
+  </tr>
+  <tr> 
+    <th> <div align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Parametric 
+        EQ</font></div></th>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+    <td> <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">YES</font></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Take a 
+  look at the diagram below to see the response curve of a parametric EQ.</strong></font></p>
+<p align="center"><img src="assets/parametric.gif" width="400" height="300"> </p>
+<hr>
+<hr>
+<h3 class="topic_header"><a name="graphic" id="graphic"></a><font face="Verdana, Arial, Helvetica, sans-serif">Graphic 
+  EQ </font></h3>
+<p>Most people are familiar with a graphic EQ from their home or car stereo system. 
+  A <b>graphic EQ</b> allows us to boost or cut multiple ranges or bands of frequencies. 
+  These bands are defined by center cutoff frequencies much like what we saw in 
+  a parametric EQ. However, unlike a parametric EQ, the center frequencies and 
+  bandwidth in a graphic EQ are fixed and can't be adjusted.</p>
+<p>The equalizers we've looked at in this topic are generally more useful for 
+  music production since they allow us to focus on a particular range of frequencies 
+  in a recorded track. A graphic EQ is a more generalized tool, well-suited to 
+  adjusting the overall tonal balance of music being played through a particular 
+  set of speakers in a given room. </p>
+<p>The following example shows the graphic EQ in Apple's ITunes. This is a 10-band 
+  EQ on which the bands are set up to correspond to musical octaves. Notice that 
+  the center frequency for each successive band is double that of the previous 
+  one. A 10-band EQ will divide the entire range of human hearing into ten octaves. 
+  (More on octaves in a later lesson!) This is typical of what you'll find in 
+  home and semi-pro applications.</p>
+<p>Graphic equalizers are common in all types PA systems. Since the size and shape 
+  of a room will make certain frequencies more pronounced, a graphic EQ is useful 
+  in compensating for this. By cutting bands of frequencies that resonate in a 
+  room, we can balance the sound coming from speakers, so it won't sound boomy 
+  or cause feedback. In higher end applications like club and concert sound systems, 
+  a graphic EQ will often have 30 bands and is commonly referred to as a 1/3 octave 
+  EQ. </p>
+<p>Many people use the graphic EQ in their car stereo systems to &quot;crank up&quot; 
+  the low end, adding a boomy, thumping ambience to the streets of many urban 
+  areas. However, as these music lovers get older, they may find a need to boost 
+  the midrange frequencies around 2-4KHz so that they can hear speech clearly 
+  above traffic noise!</p>
+<p>&nbsp;</p>
+<h4 class="body" align="center"><img src="assets/GraphicEQ.gif" width="464" height="254"></h4>
+<p class="body" align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Figure 
+  4.39.</font> <font size="2">The 10-band graphic EQ found in Apple's ITunes 2</font></font></p>
+<p class="body" align="center">&nbsp;</p>
+<h4 class="body" align="center"><img src="assets/dn300_h.jpg" width="640" height="117"></h4>
+<p class="body" align="center"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Figure 
+  4.40.</font> <font size="2">Klark-Teknik 30-band, 1/3 octave graphic EQ, commonly 
+  found in many club and concert PA systems</font></font></p>
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div align="center"></div>
+</body>
+</html>

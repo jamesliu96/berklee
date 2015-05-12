@@ -1,0 +1,67 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<title>Sample Rate</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		
+<h3><font face="Verdana, Arial, Helvetica, sans-serif"><a name="top"></a>Sample 
+  Rate</font></h3>
+		<p>In the analog-to-digital conversion process, the electrical signal from a microphone or line source is sampled many times per second, and the voltage level for each sample is stored as a number. The analog-to-digital converter is in fact a very fast digital voltmeter, which can sample a continuously fluctuating electrical signal at rapid intervals. If the interval between samples is short enough, and we take accurate enough voltage readings at each sample point, we can get a very high-resolution picture of the audio waveform captured into numbers. We can visualize this process using a time-domain graph:</p>
+		<div align="center">
+			<p><img src="Assets/7_9_Samp1.jpg" alt="" height="312" width="422" border="0"></p>
+			
+  <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Figure 7.9. The sampling 
+    process</font></p>
+		</div>
+		<p>Figure 7.9 shows a bipolar audio waveform on the time domain graph. The vertical lines in the background represent sample points in time. The frequency at which we sample is called the <b>sample rate</b>. By taking the reading of the voltage at each of those sample points, we'd get individual values for each discrete sample as shown in the following illustration:</p>
+		<div align="center">
+			<p><img src="Assets/7_10_SlowSample.jpg" alt="" height="313" width="422" border="0"></p>
+		</div>
+		<div align="center">
+			
+  <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Figure 7.10. The sample 
+    points</font></p>
+		</div>
+		<div align="left">
+			<p>Figure 7.10 shows the points at which the voltage is being read (sampled), depicted as red diamonds. Now if we used those voltages stored digitally as sample points to recreate the waveform we would get the waveform in illustration 7.11:</p>
+		</div>
+		<div align="center">
+			<div align="center">
+				<p><img src="Assets/7_11_lores.jpg" alt="" height="312" width="422" border="0"></p>
+				
+    <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Figure 7.11. The recreated 
+      waveform</font></p>
+			</div>
+			<div align="left">
+				<p>As you can see, this is not a very good representation, a very low-fidelity reproduction. The more times we sample in a given timeframe (the higher the sample rate), the higher the fidelity of the reproduction. Figures 12 and 13 show the result of sampling at a higher frequency, and the resultant waveform.</p>
+			</div>
+			<div align="center">
+				<div align="center">
+					<p><img src="Assets/7_12_Fast.jpg" alt="" height="312" width="422" border="0"></p>
+					
+      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Figure 7.12. The original 
+        waveform sampled at a higher frequency</font></p>
+					<div align="center">
+						<p><img src="Assets/7_13_sampleratedone.jpg" alt="" height="312" width="422" border="0"></p>
+						
+        <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Figure 7.13. The recreated waveform</font></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>As these illustrations show, higher sample rates give higher fidelity waveform reproduction. CD-quality sound has a sample rate of 44,100 times per second, or 44.1kHz. DAT tape uses a sample rate of 48kHz. New, high resolution digital audio systems may sample at 96kHz or even 192kHz. Generally speaking, we try to sample at more than double the frequency of the highest sound component we are trying to capture. Why not sample at the highest possible rate at all times? Four  letters: COST. The chips that actually do the sampling cost more the faster they can operate, but more importantly, the more times you sample, the more samples you need to store for each second of sound. Increased storage brings many costs:</p>
+		<ul>
+			<li>Larger long-term storage requirements			<li>More Random Access Memory (RAM) is needed			<li>Longer time required to save and load each second of sound
+			<li>Faster, more powerful processors are required to edit or manipulate the audio once stored		</ul>
+		
+<p>For these reasons, and because in many situations the faster sampling/higher 
+  fidelity sound quality does not produce any noticeable musical improvement, 
+  we take great care to store absolutely no more samples than are actually needed 
+  to meet our music production requirements.</p>
+		<hr>
+</body>
+
+</html>

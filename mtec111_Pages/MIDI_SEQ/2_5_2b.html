@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<title>Channel Messages</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		
+<h3><font face="Verdana, Arial, Helvetica, sans-serif"><a name="top"></a>MIDI 
+  Messages</font></h3>
+		<hr>
+		<div class=Section1>
+			
+  <h4><font face="Verdana, Arial, Helvetica, sans-serif">CHANNEL MESSAGES</font></h4>
+			<p>Channel messages are those meant for specific instrumental parts in a musical system. For example, a polyphonic, multi-timbral composition might have the following orchestration:</p>
+			<ul>
+				<li>synthesizer part number one playing the bass line with a certain timbre,
+				<li>synthesizer part number two playing a melody line with a different timbre,
+				<li>synthesizer part number three playing a chordal accompaniment with still another timbre.
+			</ul>
+			<p>Since MIDI, like English, is a serial communications language, all this information is traveling out one word after another, on a single line. In order to send all these synthesizers parts their individual informatuion and maintain their independence, they must have some kind of special encoding that says, &quot;This note-on command is for synthesizer part number one only.&quot; Each synthesizer must be able to discern which notes to perform. This is accomplished with channel assignments.</p>
+			<p>The MIDI language supports sixteen separate channels, much like television channels. When you watch television, all the possible channels are simultaneously available to you through your antenna or cable connection. Your television, however, can display only one channel at a time. You simply choose which channel to watch and set your receiver accordingly. You may then watch just that one program until you decide to change channels. The same is generally true with MIDI. The receiver is set to &quot;listen&quot; to one of the sixteen possible channels and &quot;tune out&quot; the rest. This channel assignment is located in the status byte. The Note-on status byte contains the message to turn a voice on and in which channel to turn it on. The last four digits of the status byte is the channel number. So 10010000 is a note-on in channel one. 0000 is a binary value of zero, and it is the first channel number, channel one. 10010110 would be a note-on in channel seven.</p>
+			
+  <h4><b><font face="Verdana, Arial, Helvetica, sans-serif">CHANNEL VOICE MESSAGES</font></b></h4>
+			<p>These messages are encoded with a channel number and pertain to performance data. These include the Note-on and off commands discussed above as well as the following channel voice status bytes.</p>
+			
+  <p><b>1. Real time controller changes:</b> These break down into two categories; 
+    specific and general controllers.</p>
+			<p>Specific controllers:</p>
+			<ol>
+				<li>Pitch bend (Status 1110 nnnn)
+				<li>Channel pressure (Status 1101 nnnn)
+				<li>Polyphonic pressure (Status 1010 nnnn)
+			</ol>
+			<p>General controllers: (Status 1011 nnnn) Any of a possible 122 unspecified controllers (0-121) which may include: wheels, sliders, buttons, pedals, footswitches, breath controllers and so forth. These are simply assigned to a controller number, and then output value changes. For continuous controllers such as wheels and pedals, these values may range from 0-127. For switches the values are generally 127 for ON, and 0 for OFF.</p>
+			
+  <p><b>2. Program change:</b> (Status 1100 nnnn)</p>
+			
+  <p>This command tells an instrument to change its internal program setting to 
+    another stored program. On a synthesizer this may be the bank and program 
+    number, or on a drum machine it may be a pattern number. There are 128 (0-127) 
+    possible program numbers.</p>
+</div>
+<div class=Section1 align="left">
+<hr>
+</div>
+		</body>
+
+</html>

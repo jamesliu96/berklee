@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Dynamics Processing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../DTMP_reference/Week1/musicianship101.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName==&quot;Netscape&quot;)&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h3 class="topic_header"><a name="top"></a><font face="Verdana, Arial, Helvetica, sans-serif">Dynamics 
+  Processing </font></h3>
+<p class="topic_header"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong><em>Topics:</em></strong></font></p>
+<ul>
+  <li><a href="#OV"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Dynamic 
+    Range </font></a></li>
+  <li><a href="#compression"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Compression 
+    - How it Works</font></a></li>
+  <li><a href="#typical_parameters"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Typical 
+    Parameters in Dynamics Processors</font></a></li>
+  <li><a href="#limiting"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Limiting</font></a></li>
+  <li><a href="#gate"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="topic_header">Gating</font></a></li>
+</ul>
+<hr>
+<h4 class="body"><font face="Verdana, Arial, Helvetica, sans-serif">Overview</font></h4>
+<p class="body">In audio production, <b>dynamics</b> means loudness. When we change 
+  the level of a track in a mixer, we’re adjusting dynamics. In that sense, basic 
+  automation is a kind of dynamics processing. <b>Dynamics processors</b> are 
+  specialized kinds of tools that respond automatically to level changes in an 
+  audio signal. They’re designed to manipulate the <b>dynamic range</b> of a signal. 
+</p>
+<h4 class="body"><font face="Verdana, Arial, Helvetica, sans-serif"><a name="OV"></a>Dynamic 
+  Range</font> </h4>
+<p class="body">Dynamic range is the difference between the loudest and the softest 
+  part of a musical performance or signal. Although musicians and composers use 
+  dynamics as a basic expressive element in music, this sometimes presents challenges 
+  in making a good recording.</p>
+<p class="body"> Let’s consider the following example: It’s a fine, sunny day 
+  and you’re taking a spin in your convertible. A Beethoven symphony is in your 
+  CD player. How well does classical music work as driving music? </p>
+<p class="body">Composers of concert music use dynamics to build tension and release 
+  in music. In quiet sections of the music, you’ll have to turn up the volume 
+  on your car stereo, only to scramble to turn down it down when the entire orchestra 
+  kicks in at full volume. You’re using the volume knob on your stereo to control 
+  dynamic range. After a few minutes of this, you’ll probably wish there was some 
+  way to do this automatically. There is! It’s called a <b>compressor. </b></p>
+<p class="body">A good symphonic recording should capture the dynamic range of 
+  the performance. Remember that the composer wrote the music to be presented 
+  in the listening environment of a concert hall, not a convertible. Most popular 
+  music is meant for a variety of listening environments, and as such, dramatic 
+  shifts in dynamic range are avoided. </p>
+<hr>
+<p>Compare the waveform views of two recordings. Which one do you think would 
+  make better driving music?</p>
+<p class="body" align="center"><font color="#FF0000"><a href="../../DTMP_reference/lesson04/assets/beethoven.gif"><img src="assets/beethoven.gif" width="589" height="258" border="0"></a></font></p>
+<p class="body" align="center"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2"><i>Beethoven, 
+  Symphony #4 in B Flat Major, Adagio.</i> This recording exhibits a wide dynamic 
+  range. Notice how the quiet section at the beginning builds to to a climax at 
+  full volume.</font></p>
+<p class="body">&nbsp;</p>
+<p class="body" align="center"><font color="#FF0000"><img src="assets/block_beats.gif" width="589" height="253"></font></p>
+<p class="body" align="center"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif">Chemical 
+  Brothers, &quot;Block Rockin' Beats.&quot; This recording has little or no dynamic 
+  range. It's always as loud as possible. </font></p>
+<hr>
+<hr>
+<strong><a name="compression" id="compression"></a><font face="Verdana, Arial, Helvetica, sans-serif">Compression 
+- How it Works</font></strong> 
+<p>Compression is used to reduce the dynamic range of a signal. We generally use 
+  compression to accomplish one of two goals: </p>
+<ol>
+  <li>Make the dynamics of a performance more consistent so that all the nuances 
+    of a performance can be heard equally well.</li>
+  <li>Make the performance louder. Remember that in mixing we only have so much 
+    headroom. In order to increase overall loudness, we'll have to reduce the 
+    level of the loudest parts of a performance. </li>
+</ol>
+<p>Take a look at the figure below. It&#146;s a waveform display of a two-measure 
+  drum part. You&#146;ll notice that there&#146;s a big difference between the 
+  highest and lowest peaks of the waveforms, that there&#146;s a wide dynamic 
+  range. Listen to the example file and you&#146;ll hear that the highest peaks 
+  represent kick drum and side stick snare sounds that provide accents. The lower 
+  peaks show the more delicate brushwork on the snare. </p>
+<p>&nbsp; </p>
+<h2 align="center"><img src="assets/drums.gif" width="635" height="221"></h2>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Drums 
+  with no compression</font></p>
+<p align="center"> 
+  <embed src="assets/original_drums.MP3" width="182" height="26" name="QuickTime Plugin" border="2" autoplay="no" align="middle"> 
+  </embed> </p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><strong>Click 
+  to Play Drum Example</strong></i></font> </p>
+<hr>
+<p align="left">In the figure below we see the same drum track compressed. Notice 
+  that the visually the difference between the lowest and highest peaks is less, 
+  indicating that the accompanying example file has less dynamic range. The result 
+  is that the brushwork is apparently louder in context with the kick and snare. 
+  This will help to better define the overall rhythmic feel of the finished mix. 
+</p>
+<h3 align="center"><img src="assets/compressed_drums.gif" width="645" height="222"></h3>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Drums 
+  with compression</font></p>
+<h3 align="center"> 
+  <embed src="assets/compressed_drums.MP3" width="182" height="26" name="QuickTime Plugin" border="2" autoplay="no" align="middle"> 
+  </embed> </h3>
+<div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><strong>Click 
+  to Play Compressed Drum Example</strong></i></font> </div>
+<hr>
+<hr>
+<a name="typical_parameters" id="typical_parameters"></a><strong><font face="Verdana, Arial, Helvetica, sans-serif">Typical 
+Parameters of Dynamics Processors</font> </strong> 
+<h4><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Typical Parameters</font></h4>
+Take a look at some of the parameters we'll find on dynamics processors. 
+<ul>
+  <li><b>Threshold: </b>the level at which the device becomes active</li>
+  <li><b>Ratio: </b>the ratio between input and output levels</li>
+  <li><b> Attack/release times: </b>the time it takes for the signal to be reduced, 
+    then restored to its original level</li>
+  <li><b>Gain: </b>increases the overall level of a processed signal</li>
+</ul>
+<p>Although there is some variation between different models of hardware and software 
+  devices, these are the basic parameters you'll find on most dynamics processors. 
+  Understanding how these work will help you use any of those devices.</p>
+<p>When we use a dynamics processor, it will be applied directly in the path of 
+  a signal. In a mix, we'll use it as a channel insert effect. </p>
+<hr>
+<h4><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Threshold and Ratio</font></h4>
+<p>A compressor will reduce the level of a signal when it reaches a certain <b>threshold</b>. 
+  The threshold parameter on any dynamics processor determines when the device 
+  becomes active. </p>
+<p>Once a signal has reached the threshold it can be processed in a variety of 
+  ways that are largely determined by the <b>ratio</b> setting. The ratio determines 
+  by how much a signal level is reduced by the process. A 2:1 ratio means that 
+  once a signal goes above the threshold, it's reduced by one-half. In other words, 
+  a signal that exceeds the threshold by 2 dB will be reduced by 1 dB. A signal 
+  that exceeds the threshold by 8 dB will be reduced by 4 dB. As we set the ratio 
+  higher, we get a greater reduction. A 4:1 ratio would work as follows. As a 
+  signal that exceeds the threshold by 8 dB, it will be reduced by 6 dB to one-quarter 
+  its original level as shown in the diagram below:</p>
+<p align="center"><img src="assets/compression-ratio2.gif" width="551" height="314"></p>
+<p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Amplitude 
+  reduction with a 4:1 compression ratio</font></p>
+<p><font color="#000000">Since one of the goals in compression is to make a signal 
+  louder, we can amplify the level of the final processed output using a control 
+  called <b>make-up gain</b>.</font> </p>
+<hr>
+<h4><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Attack and Release Times</font></h4>
+<p>Ideally, dynamics processing should sound natural. We shouldn't be able to 
+  notice, especially in acoustic recordings, that the sound is being processed. 
+  We might notice some dramatic changes in level that could be distracting if 
+  the threshold setting functioned as a switch, turning processing on and off. 
+  For this reason, a dynamics processor will usually have settings for the <b>attack 
+  time</b> and <b>release time</b>. The attack time determines the amount of time 
+  it will take for the effect to become active. The release time determines how 
+  long it will take for a signal to be restored to an unaffected state. In general, 
+  we'll use shorter attack times if we want to reduce the very start of a sound, 
+  such as the percussive hit of a drum. We'll use longer release times if we want 
+  to gradually restore a signal to its original level. </p>
+<hr>
+<h4><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The Reason Compressor</font></h4>
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Lets take a look 
+  at the compressor found in Reason and identify the controls we just mentioned. 
+  </font></p>
+<p align="center"><font color="#FF0000"><img src="assets/COMP1.gif" width="349" height="69" border="2"></font></p>
+<hr>
+<hr>
+<h4><font face="Verdana, Arial, Helvetica, sans-serif"><a name="types"></a>Types 
+  of Dynamics Processing</font></h4>
+<p>There are four different kinds of dynamics processing. The difference between 
+  these is in how the basic parameters we've just looked at function. </p>
+<ul>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Compression: 
+    </b></font>The goal is to reduce the dynamic range of a signal and usually 
+    boost the overall output. The ratio is typically set between 2:1 and 4:1, 
+    and make-up gain is used to increase the level.</li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Limiting:</b></font><b> 
+    </b>The goal is to ensure that a signal doesn't exceed the threshold. The 
+    threshold is set slightly below the maximum desired output, and a ratio of 
+    20:1 or higher is used. </li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Expansion:</b></font><b> 
+    </b>The goal to is to increase the dynamic range of a signal so that quiet 
+    signals are reduced and louder signals are boosted. This is a common way to 
+    reduce noise in a recording, when a performer isn't playing.</li>
+  <li><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Gating:</b></font><b> 
+    </b>The goal is to only let signals pass that fall above the threshold, eliminating 
+    quieter signals.</li>
+</ul>
+<hr>
+<hr>
+<strong><a name="limiting" id="limiting"></a><font face="Verdana, Arial, Helvetica, sans-serif">Limiting</font></strong> 
+<p><b>Limiting</b> is a form of dynamics processing that prevents a signal from 
+  going past a threshold. We can think of it as extreme compression. We'll take 
+  a look at the graphic display in the Logic Compressor to see how this works.</p>
+<p>In the compression exercise, we explored some basic ideas behind reducing the 
+  dynamic range of a signal.Take a minute to review what we've learned. </p>
+<ul>
+  <li>Any signal level that goes above the threshold will be reduced.</li>
+  <li>The amount that's reduced is determined by a ratio. In compressing our bass 
+    track we found that a 4:1 ratio was useful. This means that for every 4 dB 
+    the signal crossed the threshold, only 1 dB of level was output. </li>
+</ul>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Uses for Limiting</strong></font> 
+<p>Generally, limiting is used when we make audio recordings. As we saw when we 
+  discussed digital audio, we need to avoid exceeding a maximum level when recording 
+  digitally. A limiter is very useful in preventing unexpected peaks in a signal 
+  from going over a threshold and ruining a recording. In addition to software 
+  plug-ins that we can use in our virtual channel strip, we'll often find limiters 
+  in microphone pre-amps. Many of you have probably used a limiter when using 
+  video or MiniDisk recorders.</p>
+<hr>
+<hr>
+<h3 class="topic_header"><font face="Verdana, Arial, Helvetica, sans-serif"><a name="gate"></a>Gating</font></h3>
+<p><b>Gating</b> is a type of dynamics processing that prevents signals below 
+  a certain level from passing.</p>
+<p>We've just seen that the difference between compression and limiting is in 
+  how we set the compression ratio. When we gate a signal, we're in a sense limiting 
+  a signal. But, instead not allowing a signal to exceed a threshold, a gate will 
+  only pass signals that are above the threshold. This is commonly used to eliminate 
+  background noise from a track.</p>
+<font color="#333333" size="2" face="Verdana, Arial, Helvetica, sans-serif"><strong>Some 
+Things to Think About</strong></font> 
+<p>Noise gates were developed long before automated mix consoles and hard-disk 
+  recording, and were used to clean up analog recordings during mixing. These 
+  days, we can solve the kind of problem we just encountered by either automating 
+  track mutes and levels, or by editing the file to remove the unwanted sound. 
+  In modern production, gates are often used to trigger special effects, like 
+  the famous Phil Collins gated snare and tom-tom sounds that defined drums sounds 
+  in the 1980s.</p>
+<p>In setting up dynamics processors we've seen that different instruments will 
+  have their own unique loudness contour, or <b>envelope</b>, that we need to 
+  take into consideration when making these settings. What we've learned here 
+  will ultimately help us when we start using synthesis tools to make our own 
+  electronic instruments.</p>
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div align="center"></div>
+<p>&nbsp;</p>
+<div align="center"></div>
+<p>&nbsp;</p>
+<div align="center"></div>
+</body>
+</html>

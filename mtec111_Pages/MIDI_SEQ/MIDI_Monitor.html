@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<title>MIDI Message Exercise</title>
+	</head>
+	<body bgcolor="#ffffff">
+		
+<h3 class="topic_header"><a name="top"></a><span class="topic_header"><font face="Verdana, Arial, Helvetica, sans-serif">MIDI 
+  Message Exercise</font></span><font face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></h3>
+		<hr>
+		
+<h4><font face="Verdana, Arial, Helvetica, sans-serif">Using MIDI Monitor to Display 
+  MIDI Messages</font></h4>
+		
+<p> In this week's class, we learned about a number of different commands that 
+  can be sent by a MIDI controller. Let&#146;s take a look at some of the actual 
+  values your Oxygen 8 keyboard transmits when you play. MIDI Monitor is a simple 
+  OS X application that displays all incoming MIDI data. We can use it to learn 
+  more about the commands that make up the MIDI spec. If you haven't done so already, 
+  download <a href="http://www.snoize.com/MIDIMonitor/" target="_blank">MIDI 
+  Monitor. </a>(By the way, it's free.)</p>
+<p>Make sure that your Oxygen 8 is connected to your laptop and set up properly 
+  using the Audio/MIDI setup application.</p>
+<p>1. Open MIDI Monitor. You'll notice that your Oxygen 8 is sending a string 
+  of Active Sensing messages as shown below. This string of messages is designed 
+  to help troubleshoot MIDI connections. For our purposes, we won't need to see 
+  these, so let's filter them out.</p>
+<p align="center"><img src="MIDI_Monitor1.jpg" width="693" height="263" border="2"></p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Active Sensing 
+  messages.</font></p>
+<p>2. Drop the &quot;Filter&quot; submenu, and de-select the &quot;Active Sensing&quot; 
+  option. Doing this will filter out these message types, and make it much easier 
+  to view the commands sent when we play the keyboard. Choose &quot;Clear&quot; 
+  to remove the messages that have already been displayed.</p>
+<p align="center"><img src="MIDI_Monitor2.jpg" width="525" height="419" border="2"></p>
+<p align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The MIDI 
+  Filter menu</font></p>
+<p>3. Let's start with note messages. Play and hold a note on your Oxygen 8keyboard. 
+  You'll see MIDI Monitor display the message type and channel of the command 
+  it received. As you may recall, this is what's in the status byte of a MIDI 
+  command. Note number and velocity, the data bytes in a note message, are displayed 
+  directly after.<br>
+</p>
+<table width="216" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="258"><div align="center"><img src="MIDI_Monitor3.jpg" width="504" height="53" border="2"> 
+      </div></td>
+  </tr>
+  <tr> 
+    <td width="258" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Message 
+      Type: Note On</font></td>
+  </tr>
+</table>
+<p>4. Release the note and you'll notice that the same channel and note number 
+  are displayed followed by an indication that these were part of a note-off command. 
+  Many keyboards, such as the Oxygen 8, actually transmit a note-on message with 
+  a velocity of 0 when you release a key. If your keyboard transmits actual note-off 
+  messages, you'll usually see a release velocity displayed.</p>
+<table width="216" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="258"><div align="center"><img src="MIDI_Monitor4.jpg" width="504" height="53" border="2"> 
+      </div></td>
+  </tr>
+  <tr> 
+    <td width="258" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Message 
+      Type: Note Off, velocity = 0</font></td>
+  </tr>
+</table>
+<p><br>
+  5. Play some more notes on your keyboard using different dynamic levels. Notice 
+  how velocity corresponds with the dynamic level you're playing. <br>
+</p>
+<p>6. Let's try some of the other real-time controls on your keyboard. Move the 
+  Mod Wheel control. This will usually add vibrato to a synthesizer sound. You&#146;ll 
+  notice that the channel remains the same. The number displayed will be the value 
+  for Mod Wheel, controller #1.</p>
+<table width="216" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td width="258"><div align="center"><img src="MIDI_Monitor5.jpg" width="560" height="84" border="2"></div></td>
+  </tr>
+  <tr> 
+    <td width="258" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Controller 
+      1: Mod Wheel</font></td>
+  </tr>
+</table>
+<p> 7. Another common type of real-time control is pitch bend. Since the bend 
+  control on your keyboard allows you to bend both above and below the starting 
+  note, pitch bend is a type of bi-polar control, meaning that we can make changes 
+  in two directions from a starting point. This is different from the single direction, 
+  unipolar control we saw with mod wheel messages. In the following examples, 
+  we see pitch bend up, down and returned to its starting position. Try this on 
+  your keyboard.</p>
+<table width="187" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td><div align="center"><img src="MIDI_Monitor6.jpg" width="560" height="84" border="2"></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Pitch 
+        Bend Up</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><img src="MIDI_Monitor7.jpg" width="560" height="84" border="2"></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Pitch 
+        Bend Down</font></div></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><img src="MIDI_Monitor9.jpg" width="560" height="84" border="2"></div></td>
+  </tr>
+  <tr> 
+    <td width="177" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Pitch 
+      Bend Center</font></td>
+  </tr>
+</table>
+<p> 8. You'll notice that there are many more knobs on your Oxygen 8. Each of 
+  them transmits a different controller that can be used to adjust a parameter 
+  in Reason. These are set to some common defaults, but any MIDI controller can 
+  be assigned to any knob. The Oxygen-9 manual will describe how. Move the Data 
+  Entry slider that's to the left of the display and you'll see that it's set 
+  to send controller 7, volume messages.</p>
+<table width="385" height="203" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr> 
+    <td height="171"><div align="center"><img src="MIDI_Monitor10.jpg" width="560" height="84" border="2"></div></td>
+  </tr>
+  <tr> 
+    <td align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The 
+      Data Entry Slider </font></td>
+  </tr>
+</table>
+<p>See what MIDI messages are sent by the other knobs on your Oxygen 8.</p>
+<hr>
+</body>
+
+</html>
